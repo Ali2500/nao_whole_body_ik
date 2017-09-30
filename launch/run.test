@@ -1,0 +1,7 @@
+<launch>
+  <param name="robot_description" textfile="$(find nao_whole_body_ik)/config/nao.urdf"/>
+  <param name="robot_description_semantic" textfile="$(find nao_whole_body_ik)/config/nao.srdf"/>
+  
+  <node name="nao_whole_body_ik_test" pkg="nao_whole_body_ik" type="nao_whole_body_ik_test" output="screen"/>
+  <test test-name="nao_whole_body_ik_test" pkg="nao_whole_body_ik" type="nao_whole_body_ik_test"/>
+</launch>

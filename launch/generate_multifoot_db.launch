@@ -1,0 +1,8 @@
+<launch>
+
+    <param name="robot_description_right" textfile="$(find nao_whole_body_ik)/config/nao.urdf"/>
+    <param name="robot_description_right_semantic" textfile="$(find nao_whole_body_ik)/config/nao.srdf"/>
+    
+    <node name="database_generator" type="database_generator" pkg="nao_whole_body_ik" output="screen" launch-prefix="gdb -ex run --args"/>
+	
+</launch>
