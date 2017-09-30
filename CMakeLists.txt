@@ -40,7 +40,7 @@ list(APPEND LIBRARIES    ${HDF5_LIBRARIES})
 ##------------------------------------------------------------------------------
 ## GTest
 ##------------------------------------------------------------------------------
-find_package(HDF5 REQUIRED)
+find_package(GTest REQUIRED)
 list(APPEND INCLUDE_DIRS ${GTEST_INCLUDE_DIRS})
 list(APPEND LIBRARY_DIRS ${GTEST_LIBRARY_DIRS})
 list(APPEND LIBRARIES    ${GTEST_LIBRARIES})
